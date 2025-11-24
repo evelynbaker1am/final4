@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>f1pages</title>
+  <style type="text/css">
+    html{font-family: "Noto Serif KR", serif;
+      
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 1.6;
+      word-break: keep-all;}
+      img {border-radius: 20px}
+      body, h1, h2, h3, p, ol, ul{margin:0; padding:0}
+      section{background: blue; padding: 100px 0px}
+      h2{margin: 50px 0px 20px; font-size: 3rem; line-height: 1.5}
+      p{margin: 10px 0px}
+      .left-spacing{padding-left: 200px;}
+      .right-spacing{padding-right:200px;}
+
+      .wrap{width: 1500px; margin:auto; position: relative;}
+
+      .bg-darkred{background: darkred;}
+      .bg-warn{background: url("warn.jpg");
+        background-attachment: fixed;
+        background-size: cover;}
+      .bg-road{background: url("road.jpg");
+        background-attachment: fixed;
+        background-size: cover;}
+      .bg-dot{background: url("dot.jpg");
+        background-attachment: fixed;
+        background-size: cover;}
+       .bg-fast{background: url("fast.gif");
+        background-attachment: fixed;
+        background-size: cover;
+        border: 4px dashed darkred;
+        padding: 40px;
+        box-sizing: border-box;} 
+       .bg-white2{background: url("white.gif");
+        background-attachment: fixed;
+        background-size: cover;} 
+       .bg-ooo{background: url("ooo.gif");
+        background-attachment: fixed;
+        background-size: cover;} 
+      .bg-dia{background: url("dia.jpg");
+        background-attachment: fixed;
+        background-size: cover;} 
+      .bg-two{background: url("two.gif");
+        background-attachment: fixed;
+        background-size: cover;} 
+      .bg-earth{background: url("earth.gif");
+        background-attachment: fixed;
+        background-size: 500px;}
+      .bg-weel{background: url("weel.gif");
+        background-attachment: fixed;
+        background-size: 500px;
+        border: 4px dashed darkred;
+        padding: 40px;
+        box-sizing: border-box;   }
+      .bg-ready{background: url("ready.gif");
+        background-attachment: fixed;
+        background-size: cover;}
+      .bg-car{background: url("car.gif");
+        background-attachment: fixed;
+        background-size: cover;}
+      .bg-car2{background: url("car2.gif");
+        background-attachment: fixed;
+        background-size: 500px;}
+      .bg-cool{background: url("cool.gif");
+        background-attachment: fixed;
+        background-size: 400px;}
+      .bg-boom{background: url("boom.gif");
+        background-attachment: fixed;
+        background-size: 1000px;}
+      .bg-black2{background: url("black.gif");
+        background-attachment: fixed;
+        background-size: 300px;}
+      .bg-white{background: white;border: 6px dotted black;}
+      .bg-black{background: black;border: 6px dotted black; }
+      .bg-red{background: darkred;border: 6px  dotted white; }
+      .white{color: white;}
+      .darkred{color: darkred;}
+
+      .img-large{ width: 90%;  margin: 0 auto;display: block;}
+
+      .img-medium{width: 60%;margin: 0 auto;display: block;}
+
+      .img-small{width: 40%;margin: 0 auto;display: block;}
+      .gif-area{position: relative;width: 100%;
+  height: 400px; }
+
+
+  body {
+  background: url("road.jpg");
+  background-size: cover;      
+  background-attachment: fixed;  
+  
+  margin: 0;
+  border-left: 15px solid darkred;
+  border-right: 15px solid darkred;
+}
+
+
+      img{width: 100%}
+      .flex{display: flex; justify-content: space-between;}
+      ul,il{list-style: none;}
+      ul li a{text-decoration: none; display: block ; padding: 8px 12px; color:white;}
+      ul li a:hover{background: white; color: black
+       ; transition: all 1s}
+       .logo{position: relative;}
+      .logo h1{color: white; font-size: 1rem; padding: 8px 12px; cursor: pointer;}
+      .bg-header{background: url(helmet.jpg);
+        background-size: cover;
+        background-position: center}
+        header{padding: 350px 0px}
+        header {
+  border-top: 4px dotted white;
+  border-bottom: 4px dotted white;}
+
+        header h1{font-size: 2.5rem; color: white; text-shadow: 0px 0px 4px white;
+          animation: glow 4s infinite alternate cubic-bezier(0, 76, 0, 0.16, 1);
+          position: absolute; left: 0px; top: -188px}
+        header p{font-size: 1rem; color: white;
+          text-shadow: 0px 0px 4px white;
+        animation: glow 4s infinite alternate cubic-bezier(0, 76, 0, 0.16, 1);}
+        /*css animation definition*/
+        @keyframes glow{
+          from{text-shadow: 0px 0px 0px white;}
+          to{text-shadow: 0px 0px 13px white;}
+        }
+        .big{font-size: 15rem; color: white;
+          position: absolute;
+          left: 0px; top: 0px}
+
+          
+
+
+          .container {
+  position: relative;
+  width: 50%;
+}
+        .center-text {
+  text-align: center;
+}
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #black;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: darkred;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+
+.ani {
+  width: 350px;
+  height: 130px;
+  position: relative;
+  animation-name: myAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate; 
+  animation-iteration-count: infinite;
+}
+img{border-radius: 0px}
+#img1 { animation-timing-function: linear; }
+#img2 { animation-timing-function: ease; }
+#img3 { animation-timing-function: ease-in; }
+#img4 { animation-timing-function: ease-out; }
+#img5 { animation-timing-function: ease-in-out; }
+
+@keyframes myAnimation {
+  from { left: -500px; }
+  to { left: 500px; }
+}
+
+
+
+
+.ani-img {
+  width: 400px;
+  height: 100px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  animation: moveChange 2s infinite linear;
+  
+}
+
+@keyframes moveChange {
+  0% {
+    left: -1000px; top: 0px;
+    background-image: url('orange.png');
+  }
+  25% {
+    left: 2000px; top: 0px;
+    background-image: url('orange.png');
+  }
+  50% {
+    left: 2000px; top: 600px;
+    background-image: url('orange.png');
+  }
+  75% {
+    left: -1000px; top: 600px;
+    background-image: url('orange.png');
+  }
+  100% {
+    left: -1000px; top: 0px;
+    background-image: url('orange.png');
+  }
+}
+
+    .fade-img {
+  opacity: 0.3;
+}
+
+
+
+    .section-line {
+  border-bottom: 6px solid darkred;
+}
+
+
+
+
+------------------------ /포지션 어쩌구 너무 어려움ㅜ/
+.reed{
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 200px;
+  z-index: 999;
+}
+
+.dotflag{
+  position: absolute;
+  top: 250px;
+  left: 630px;
+  width: 200px;
+  z-index: 999;
+}
+.orange{
+  position: absolute;
+  top: 2650px;
+  left: 100px;
+  width: 800px;
+  z-index: 999;
+}
+
+.bluee{
+  position: absolute;
+  top: 2830px;
+  left: 580px;
+  width: 1400px;
+  z-index: 999;
+}
+
+.redwheel {
+  position: absolute;
+  width: 150px;
+
+  animation: spin 0.2s linear infinite,
+             moveWheel 4s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+@keyframes moveWheel {
+  0%   { left: -200px; top: 1000px; }
+  50%  { left: 1600px; top: 1000px; }  
+  100% { left: -200px; top: 1000px; }  
+}
+
+.redwheel2 {
+  position: absolute;
+  width: 150px;
+
+  animation: spin 0.2s linear infinite,
+             moveWheel 4s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+@keyframes moveWheel {
+  0%   { left: -200px; top: 530px; }
+  50%  { left: 1600px; top: 530px; }  
+  100% { left: -200px; top: 530px; }  
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+</div>
+
+
+
+
+          
+
+
+  </style>
+</head>
+<body>
+   <nav class="bg-black">
+     <div class="wrap flex">
+       <div class="logo">
+         <h1>f1 pages</h1>
+     </div>
+       <ul class="flex">
+       <li><a href="#">racing</a></li>
+       <li><a href="#">survival</a></li>
+       <li><a href="#">engine</a></li>
+       <li><a href="#">heat</a></li>
+       <li><a href="#">history</a></li>
+      </ul>
+    </div>
+    
+  </nav>
+  <header class= "bg-header">
+      <div class="wrap">
+        <h1>f1 pages</h1>
+        <p>The Extreme of Racing, the Limit of Humanity</p>
+      </div>
+      
+  </div>
+</div>
+  </header>
+  <section class="bg-road text-center">
+    <img src="reed.png" class="reed">
+    <img src="dotflag.png" class="dotflag">
+    <img src="bluee.png" class="bluee">
+    <div class="wrap">
+      <section class="bg-weel">
+        
+    
+<h2 class="bg-red black center-text">The Edge of Speed, the Breaking Point of Humanity</h2>
+        
+
+  <div class="white center-text">RACING · SURVIVAL · ENGINE · HEAT</div>
+  <br><br><br><br>
+  
+        <p class="white center-text">
+          레이싱은 단순한 속도 경쟁이 아니다.<br> 시속 300km가 넘는 속도,<br>
+          5G에 달하는 압력,<br>최대 60도의 열기 속에서 드라이버는 매 순간
+          생존을 위해 싸운다.
+        </p>
+      
+         <br><br><br>
+        <p class="white center-text">
+          그 안에서 인간의 집중력, 체력, 정신력은 끝까지 몰린다.<br>
+          이 프로젝트는 그 극한의 환경 속에서 드라이버들이 어떻게 버티고,
+          어떻게 살아남는지에 대한 기록이다.
+        </p>
+        <br><br>
+      </section>
+        
+      
+    </div>
+
+    <img src="orange.png" class="orange">
+  </section>
+    <br><br><br>
+  
+
+  
+  <section class="bg-road">
+    <div class="wrap">
+      <section class="bg-road">
+    
+      <h2 class="bg-white darkred center-text">EXTREME FACTS</h2>
+      <p class="white center-text" >
+        레이스카 내부의 온도는 최대 60도까지 올라가고,<br> 콕핏 안에서 드라이버는 
+        2시간 가까이 집중력을 유지해야 한다.<br>여기에 코너마다 5G 이상의 압력이 몸을 짓누른다.
+      </p>
+      <img src="redwheel.png" class="redwheel">
+
+    </section>
+    </div>
+    </section>
+      
+  
+
+      <section class="bg-road">
+        
+      <div class="wrap">
+        <section class="bg-fast">
+        <h2 class="white center-text">Extreme Braking <br>Vision Loss</h2><br><br>
+        <p class="white center-text">F1 드라이버는 시속 300km 이상에서 브레이크를 밟을 때 약 5~6G의 강한 감속을 견딘다.<br> 이때 혈액이 순간적으로 앞으로 쏠리면서 시야가 좁아지거나 흐려지는 ‘터널 비전’ 현상이 발생한다. <br>그럼에도 드라이버는 동시에 다음 코너, 차 간격, 타이어 상태를 계산해야 한다.<br> 인간이 감당할 수 있는 한계에 가장 근접한 순간이다.</p>
+        <br><br>
+        <div class="white center-text">SURVIVAL RACE</div>
+      </div>
+
+    </section>
+      
+    
+  
+
+  </section>
+
+ 
+  <section class="bg-road">
+
+
+    <div class="wrap">
+    
+        <h2 class="bg-white darkred center-text">PHYSICS OF SURVIVAL</h2><br><br>
+        <p class="center-text white">
+          F1 드라이버의 몸에는 레이스 내내 극단적인 물리적 힘이 작용한다.
+          단순히 빠르게 달리는 것이 아니라,<br> 몸이 견딜 수 있는 한계와의 싸움이다.<br>
+        </p>
+        <p class="center-text white">
+          G-포스, 온도, 반응속도는 모두 생존과 직결되는 변수다.<br>
+          이 변수들이 조금만 어긋나도, 레이스는 곧바로 “위험”으로 전환된다.
+        </p>
+        <br><br>
+        <img src="redwheel.png" class="redwheel2">
+
+      </div>
+      </section><br><br>
+
+      <section class="bg-white2">
+        <div class="wrap">
+          <br><br>
+        <h3 class="center-text darkred">
+          
+          이 수치는 경기, 트랙, 드라이버에 따라 달라지지만,<br>  
+          공통점은 하나다.<br> <strong>“평범한 몸으로는 버틸 수 없다”</strong>는 것.
+        </h3><br><br><br>
+      </div>
+        </section>
+
+        <section class="bg-road">
+          <div class="wrap">
+            <h1></h1>
+
+<img id="img1" src="purple.png" class="ani">
+<img id="img2" src="orange2.png" class="ani">
+<img id="img3" src="reed.png" class="ani">
+<img id="img4" src="bluee.png" class="ani">
+
+         <h2 class="center-text white">MENTAL · PHYSICAL</h2><br>
+         <h1></h1>
+
+<img id="img1" src="purple.png" class="ani">
+<img id="img2" src="orange2.png" class="ani">
+<img id="img3" src="reed.png" class="ani">
+<img id="img4" src="bluee.png" class="ani">
+
+       </div>
+     </section>
+     <section class="bg-white2">
+      <div class="wrap">
+        <p class="right-spacing darkred">두뇌와 근육, 동시에 풀가동</p>
+        <p class="right-spacing darkred">레이스 중 드라이버는 초당 수십 개의 정보를 처리한다.<br><br>
+        다음 코너의 각도, 브레이킹 포인트, 타이어 마모, 연료 잔량, 팀 라디오의 지시까지.<br> 
+        이 모든 것을 받아들이면서도, 스티어링과 페달은 단 0.1초의 실수도 허용하지 않는다.<br><br>
+        그래서 F1 드라이버의 훈련은 헬스장에서 끝나지 않는다.<br>  
+        반응속도 훈련, 시각-인지 훈련, 멀티태스킹 훈련까지 모두 “생존 스펙”이다.</p>
+      </div>
+      
+  </section>
+
+<section class="bg-road">
+    <div class="wrap">
+    
+        <h2></h2>
+
+<div class="ani-img"></div>
+    
+      <h2 class="bg-white darkred center-text">THE REAL BATTLE BEGINS HERE</h2><br><br><br><br></div></section>
+      <section class="bg-white2">
+        <div class="wrap">
+      <p class="center-text darkred">트랙 위에서는 매 순간이 전쟁이다.<br>
+냉정함을 잃는 순간, 승리는 사라진다</p>
+</div>
+   
+  </section>
+
+  
+  <section class="bg-road">
+    <div class="wrap">
+    <div class="ani-img"></div>
+        <h2 class="left-spacing bg-white darkred">ABOUT SURVIVAL</h2>
+      </div>
+    
+           
+      <p class="white center-text">
+          F1은 단순히 “누가 더 빨리 가는가”의 문제가 아니다.<br>
+          시속 300km의 속도, 타이어가 비명을 지르는 코너, 그리고 언제든 사고로 이어질 수 있는 위험.<br>
+          이 모든 것을 버티는 순간, 드라이버는 단순한 선수에서 “생존자”가 된다.<br><br><br><br><br><br><br><br>
+        </p>
+      </div>
+    </section>
+
+   
+     
+        <h2 class="center-text bg-car2 white">BECOME A SURVIVOR</h2>
+      <p class="left-spacing darkred" >
+          <br><br><br><br>
+          레이싱의 이면을 따라가고 싶다면,<br> 
+          극한의 환경 속에서 버티는 인간의 이야기에 관심이 있다면<br>  
+          이 프로젝트와 함께해라.
+        </p>
+        
+  </div>
+</div>
+
+
+        <br><br><br>
+      
+
+        <img src="run.gif" alt="Lose 4 kilos">
+        
+        <br><br><br>
+        <h2 class="center-text white bg-car2">LOSE 4 KILOS IN A SINGLE RACE</h2>
+        <br><br><br><br>
+        <p class="left-spacing darkred" >
+          레이스카 내부의 온도는 최대 60도까지 올라가고,<br>
+          방열 효과가 제한적인 콕핏 안에서 드라이버는 2시간 가까이
+          집중력을 유지해야 한다.<br> 숨을 고르고, 스티어링 휠을 쥐고,<br>
+          브레이크와 엑셀을 반복하는 동안 몸에서는 4리터 가까운 땀이 빠져나간다.<br><br>
+          그래서 한 경기가 끝나면 드라이버의 몸무게는 4킬로그램 정도 줄어든다.<br>
+          그 무게만큼 사라진 것은 단순한 수분이 아니라,
+          트랙 위에서 버텨낸 시간과 집중, 그리고 생존 그 자체이다.<br><br><br>
+        </p>
+    
+        
+      </div>
+      
+  </section>
+
+  
+  <section class="bg-road">
+    <div class="wrap">
+    <h2 class="bg-white darkred center-text">VICTORY STORIES</h2>
+    <br><br><br><br>
+
+    
+           <p class="right-spacing white">
+          F1 드라이버는 시속 300km 속에서도 머릿속은 차갑게 유지해야 한다.
+          공포, 흥분, 긴장감 속에서 진짜 승부를 가르는 것은
+          “얼마나 차분하게 결정할 수 있는가” 이다.
+        </p>
+      
+        <p class=" right-spacing white">THE HEAT OF THE TRACK<br>THE FIRE THAT DRIVES CHAMPIONS</p>
+          <p class="right-spacing white">
+          트랙 위의 열기, 엔진과 타이어에서 올라오는 뜨거운 공기.
+          그 열기 속에서 숨을 쉬고, 그 열기를 파고들며 드라이버는 다시 태어난다.
+        </p><br><br><br><br>
+       
+     
+          <img src="redbull.gif" img class="img-big" alt=""><br><br><br>
+       
+          <p class="right-spacing white">
+          엔진의 폭발음과 함께 피트 건물 사이로 연기가 피어오른다.<br>
+          그 순간, 관중의 심장도 동시에 요동친다.
+        </p>
+      </div>
+      
+  </section>
+
+
+  
+    
+    
+      <section class="bg-weel">
+        <div class="wrap">
+    
+      <h2 class="bg-white center-text darkred">INTERESTING THINGS ABOUT F1</h2>
+      <br><br>
+      <p class="right-spacing white">
+        F1 드라이버는 시속 300km에서도 책의 문장을 읽을 수 있을 정도로
+        시야가 안정적이라고 말한다. 차체와 서스펜션이 진동을 최대한
+        억제하도록 설계되어 있기 때문이다.
+      </p><br>
+      <p class=" left-spacing white">
+        하지만 “보인다”는 것과 “판단할 수 있다”는 것은 다르다.<br>
+        그 속도에서 정보를 인식하고, 동시에 다음 코너와 타이어 상태,<br>
+        연료 전략까지 계산해야 한다는 점에서 F1은 인간 뇌의 한계를 시험하는 스포츠다.<br><br>
+      </p>
+
+      <h3 class="white">
+        · 경주 중 심박수 180~200 유지<br>
+        · 전투기 조종사 수준의 G-포스를 연속으로 견뎌야 함<br>
+        · 목, 코어 근육을 위한 특수 트레이닝 필수
+      </h3>
+      <br><br><br>
+  </div>
+</section>
+    
+ 
+ 
+ 
+    <section class="bg-road">
+      <div class="wrap">
+      <h2 class="bg-white2 darkred center-text">PIT STOPS · PERFECT SECONDS</h2>
+      <br><br><br>
+      <p class="right-spacing white">
+        F1에서 피트스톱은 단순히 타이어만 갈고 나가는 시간이 아니다.<br> 
+        2~3초 사이에 20명이 넘는 크루가 동시에 움직이는, 하나의 안무 같은 작업이다.<br>
+      </p>
+      <p class="right-spacing white">
+        잭맨이 차를 들어 올리는 순간, 네 개의 휠건이 동시에 너트를 풀고,<br> 
+        타이어 크루가 새 타이어를 끼우고, 다시 조여서 차를 내려보낸다.<br> 
+        이 과정에서 단 한 명만 늦어도, 순위는 바로 몇 계단씩 떨어진다.<br>
+      </p><br><br><br>
+
+      
+      <p class="right-spacing white">
+        드라이버가 피트에 들어오는 순간부터,  
+        모든 팀원은 “실수 없이, 그러나 최대한 빠르게”를 반복해서 떠올린다.
+      </p>
+      <p class="left-spacing white">
+        타이어 하나가 늦게 끼워지거나, 휠건이 한 번만 헛돌아도  
+        수십 랩 동안 쌓아 올린 레이스가 한 번에 무너질 수 있다.
+      </p>
+    </div>
+      
+    
+  </section>
+
+  
+  <section class="bg-road">
+    <div class="wrap">
+    <h2 class="bg-white2 darkred center-text">TYRE STRATEGY · WHY COLOURS MATTER</h2><br>
+    <p class="right-spacing white">
+      F1 타이어는 단순히 검은 고무 덩어리가 아니다.<br>  
+      어떤 컴파운드를 선택하느냐에 따라, 레이스의 전체 전략이 달라진다.<br>
+    </p>
+
+    <p class="left-spacing white">
+        빠르게 달릴 수 있지만 금방 닳아버리는 타이어.<br>  
+        예선이나 스프린트, 또는 레이스 후반 추격전을 위해 자주 사용된다.<br><br><br>
+        </p>
+
+      
+        <h4 class="white">MEDIUM · 미디엄 타이어</h4>
+        <p class="right-spacing white">수명과 그립의 균형이 좋은, 가장 “무난한” 선택.<br>  
+        대부분의 팀이 기본 전략으로 택하는 타이어다.<p><br><br><br><br>
+        
+      
+
+    
+        <h4 class="left-spacing white">HARD · 하드 타이어</h4>
+        <p class="left-spacing white">잘 닳지 않는 대신, 워밍업이 느리고 초반 그립이 떨어진다.<br>
+        하지만 한 번 온도가 올라가면 오래 버티며 스틴트를 길게 끌고 갈 수 있다.</p><br>
+      
+
+    <p class="left-spacing white">
+      대부분의 그랑프리에서 팀은 서로 다른 두 종류 이상의 타이어를 반드시 사용해야 한다.  
+      즉, 어떤 타이어를 언제 쓰느냐가 곧 <strong>“전략”</strong>이 된다.
+    <p>
+    </p>
+  </section>
+
+  
+  <section class="bg-weel">
+    <div class="wrap">
+    <h2 class="bg-white darkred center-text">F1 팀은 왜 수가 <br>적을 수밖에 없는가?</h2><br><br></div></section>
+
+   <section class="bg-road">
+    <div class="wrap">
+      <h2></h2>
+     <p class="right-spacing white">  F1 한 팀을 운영하기 위한 연간 예산은 수천억 단위에 이른다.
+          차 한 대, 연구 개발, 장비, 물류, 인건비까지 모든 것이 비싸다.
+          그렇기 때문에 아무 팀이나 참가할 수 없고, 팀 수는 자연스럽게 제한된다.
+          “들어오는 것”보다 “버티는 것”이 더 어렵다.
+        </p><br><br>
+      
+           
+        <p class="left-spacing white">
+          F1 머신은 사실상 “바퀴 달린 전투기”에 가깝다.
+          공기역학, 엔진 설계, 에너지 회수 시스템, 데이터 분석 등
+          첨단 기술이 결합되어 있고, 이를 감당하고 유지할 수 있는 회사는
+          전 세계에서도 극히 제한적이다.
+        </p><br><br>
+      <p class="right-spacing white">
+          한 팀에는 수백 명에서 천 명이 넘는 인원이 필요하다.
+          드라이버는 그중 단 두 명일 뿐이다.
+          레이스 전략, 타이어, 엔진, 섀시, 데이터, 마케팅까지.
+          수많은 사람들이 함께 움직일 때 비로소 한 대의 차가 트랙 위를 달릴 수 있다.
+        </p><br><br>
+        
+    <h3 class=white>
+        F1은 “들어가는 것”보다 “버티는 것”이 더 어려운 세계
+      </h3><br><br>
+      <p class="left-spacing white">
+        돈, 기술, 사람. 이 세 가지를 동시에 갖춘 팀만이 이 무대에 설 수 있고,  
+        그 상태를 몇 년씩 유지하는 팀만이 “전통의 팀”이 된다.
+      </p>
+    </div>
+      
+
+  </section>
+
+ 
+  <section class="bg-road">
+    <div class="wrap">
+      
+        
+      
+      
+        <h2 class="bg-white darkred center-text">경기 중 요절한 선수</h2>
+        <h3 class="white center-text">AYRTON SENNA</h3>
+        <p class="center-text white">
+          F1 역사상 가장 위대한 드라이버 중 한 명으로 불리는 아일톤 세나.
+          1994년 산마리노 그랑프리 도중 탬부렐로 코너에서의 사고로 세상을 떠났다.<br><br>
+          그의 죽음은 전 세계에 큰 충격을 주었고, 그 이후 F1의 트랙 설계,
+          차체 강도, 헬멧, 의료 시스템까지 안전 규정은 근본적으로 바뀌게 되었다.
+        </p><br><br><br>
+        <img src="player3.jpg" alt="Ayrton Senna">
+      <br><br><br>
+     
+
+   
+      
+        
+        <h2 class="bg-white darkred center-text">경기 중 요절한 선수</h2>
+        <h3 class="white center-text">ROLAND RATZENBERGER</h3>
+        <p class="center-text white">
+          세나와 같은 주말, 예선에서 프런트윙이 파손된 상태로 고속 주행을 이어가다
+          벽과 충돌해 사망한 롤란트 라첸베르거.<br><br>
+          이 연속된 두 사고는 F1 역사상 가장 충격적인 주말로 기록되며,
+          현대 F1 안전 규정의 출발점이 되었다.
+        </p><br><br><br>
+        <img src="player2.jpg" alt="Roland Ratzenberger">
+        <br><br>
+    
+      
+    </div>
+  
+   </div>
+      
+  </section>
+
+  
+  <section class=bg-road>
+    <div class="wrap">
+    <h2 class="white center-text" >ABOUT RACING</h2>
+
+    <h3 class= "white center-text">
+      레이싱은 속도의 이야기가 아니다.<br>
+      끝까지 버티는, 살아남는 자의 이야기다.
+    </h3>
+    <br>
+  </div>
+    
+  </section>
+
+
+</body>
+</html>
+
